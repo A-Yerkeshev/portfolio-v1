@@ -1,0 +1,19 @@
+body {
+	background-color: ivory;
+	width: 100%;
+	margin: 0px;
+}
+.description {
+	position: fixed;
+	width:100%;
+	bottom: 0px;
+	background-color: ivory;
+	border-top: 2px solid darkred;
+	-webkit-text-fill-color: darkred;
+	font-family: serif;
+}
+.link {
+	text-decoration: underline gold double;
+	-webkit-text-fill-color: darkred;
+	font-family: serif;
+}

@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="static/css/styles.css">
+		<link rel="stylesheet" media="screen and (min-width:530px)" href="static/css/large.css">
+	</head>
+	<body>
+		<header class="header">
+			<img class="logo" src="static/images/logo.jpg" alt="html logo">
+			<h1 class="float_text">Arman Yerkeshev</h1>
+			<h3 class="float_text clear_right">Potential Full-Stack developer</h3>
+		</header>
+		<main class="main">
+			<iframe name="frame" class="frame" src="{{url_for('movies')}}"></iframe>
+			<p class="par">This is a portfolio website, that contains all my not numerous projects.
+			It is all done using HTML and CSS only.</p>
+			<h2 class="main_text">Projects</h2>
+			<a id="movies" href="{{url_for('movies')}}" target="frame">
+				<h3 class="item_title">Movies website</h3>
+			</a>
+			<a id="portfolio" href="{{url_for('portfolio')}}" target="frame">
+				<h3 class="item_title">This site!</h3>
+			</a>
+			<a class="blank" href="{{url_for('blank')}}" target="frame">
+				<h3 class="item_title">Coming soon</h3>
+			</a>
+			<a class="blank" href="{{url_for('blank')}}" target="frame">
+				<h3 class="item_title">Coming soon</h3>
+			</a>
+			<div class="main_bottom"></div>
+		</main>
+		<footer class="footer">
+			<h3 class="float_text">e-mail: a.yerkesh@gmail.com</h3>
+		</footer>
+</html>
